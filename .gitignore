@@ -6,13 +6,6 @@ ENV/
 
 # Environment Variables
 .env
-
-# Data Files (Avoid uploading datasets, especially from Kaggle)
-data/
-*.csv
-*.xlsx
-*.parquet
-
 # Python Byte-compiled / Optimized / DLL files
 __pycache__/
 *.py[cod]
