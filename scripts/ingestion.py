@@ -7,10 +7,10 @@ from dotenv import load_dotenv
 # 1. Dynamic Pathing
 # Resolves the exact path of this script so it runs from anywhere
 script_dir = Path(__file__).resolve().parent
-data_path = script_dir / "logistics_data.csv" 
+data_path = script_dir.parent / "data" / "raw" / "logistics_data.csv" 
 
 # Load the secret credentials from the .env file we just created
-load_dotenv(script_dir / ".env")
+load_dotenv(script_dir.parent / ".env")
 
 db_host = os.getenv("DB_HOST")
 db_port = os.getenv("DB_PORT")
